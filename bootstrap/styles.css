@@ -1,0 +1,315 @@
+/* Main css */
+
+html,body{
+	overflow-x: hidden;
+}
+html{
+	scroll-behavior: smooth;
+	transition: all ease 0.8s;
+}
+
+/*Navigation menu start*/
+ .navbar-brand{
+	 padding-bottom: 10px;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	 font-weight: 900;
+	 color: black!important;
+ }
+
+
+ .navbar-dark .navbar-nav .nav-link.active,
+ .navbar-dark .navbar-nav.show >.nav-link,
+ .navbar-dark .navbar-nav .nav-link{
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-weight: 700;
+     font-size: 18px;
+	 padding: 8px 20px;
+	 color: black;
+	 transition: all 0.8s ease
+ }
+
+.navbar{
+	transition: all ease 0.8s;
+}
+
+.navbar-nav>.nav-item>.nav-link:hover{
+	color:rgb(255, 255, 0)!important;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler:focus{
+    outline: none;
+}
+
+.navbar.fixed{
+	background-color: rgba(251, 247, 8, 0.705)!important;
+	transition: all ease 0.8s;
+}
+
+/*Navigation menu end*/
+
+/*home section start*/
+.home{
+	min-height: 100vh;
+	padding: 200px 100px;
+	background-size:cover;
+	background-image: url('../images/shaxs.jpg');
+	background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.home_container{
+	padding-top: inherit;
+}
+
+.home_text_position h3{
+	font-weight:800;
+	color: white;
+}
+
+.home_text_position h1{
+	font-weight: 600;
+	color: white;
+}
+
+.home_button{
+	margin-top: 1rem;
+	width: 250px;
+	height:75px;
+	border-radius:15px!important;
+	font-weight:800;
+	font-size:1.5rem;
+}
+.home_button:hover{
+	color:black;
+}
+/*home section end*/
+
+/*Services section start*/
+.services_card{
+	border: none;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.services_card-image {
+	background-color: white;
+	border: none;
+}
+.services_card-image li{
+	list-style: none;
+	font-size: 8rem;
+	color:yellow;
+	background-color: black;
+	border-radius: 50%;	
+}
+
+.services_card-image:hover{
+	color:green;
+}
+/* Services section end */
+
+/*Portfolio section start*/
+.portfolio_img img{
+	width: 100%;
+}
+
+.overlay{
+	padding-top: 4rem;
+	position: absolute;
+	background: rgba(251, 247, 8, 0.705);
+	opacity: 0;
+	width: 100%;
+	height: 100%
+}
+.overlay:hover{
+	opacity: 1;
+	transition: all 0.5s ease;
+}
+
+/*Portfolio section end*/
+
+/*About section start*/
+
+.about_biography{
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.about_item ul>li{
+	font-size:1.2rem;
+	font-weight: 600;
+}
+
+.about_social-media p{
+	font-size: 2rem;
+	font-weight: 600;
+}
+.about_social-media a{
+	font-size: 1.2rem;
+	color: black;
+	padding: 1.5rem;
+	text-decoration: none;
+}
+.about_social-media li{
+	color: black;
+	font-size: 1.5rem;
+}
+.about_social-media li:hover{
+	color: yellow;
+}
+/*About section end*/
+
+/*Contact section start*/
+.contact{
+	background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+	transition: all 0.3s ease;
+	background-size: cover;
+}
+.glass{
+	min-height: 60vh;
+	margin-bottom: 3rem;
+	height: 100%;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact_form-1 input{
+	width: 90%;
+	border: 2px solid rgba(251, 247, 8, 0.705) ;
+	border-radius: 10px;
+	margin: 0.5rem;	
+}
+
+.contact_form-2 textarea{
+	width: 90%;
+	height: 7.5rem;
+	border-radius: 10px;
+	border: 2px solid rgba(251, 247, 8, 0.705) ;
+	margin: 0.5rem 0 0.5rem 0;
+}
+
+.contact_form-2 .contact_button{
+	width: 40%;
+	font-weight: 800;
+}
+/*Contact section end*/
+
+/*Footer section start*/
+.footer{
+	background-color:black;
+}
+
+.footer .footer_text,.footer_social-media,.footer_text2{
+	color: yellow;
+}
+
+.footer .footer_social-media ul li{
+	display: inline-block;
+}
+
+.footer .footer_social-media ul>li>a{
+	font-size:2rem;
+	justify-content: center;
+	color:yellow;
+	margin: auto;	
+	padding: 0.6rem;
+}
+
+.footer .footer_social-media ul>li>a:hover{
+	background: yellow;
+	color:black;
+	justify-content: center;
+	border-radius: 50%;
+}
+/*Footer section end*/
+
+/* Media Query Responsive Web section */
+
+@media (min-width:1200px)and (max-width:1880px){
+	.services_card{
+		padding:4rem;
+	}
+}
+
+@media (min-width:1024px) and (max-width:1366px){
+	.home{
+		min-height: 65vh;
+	}
+	.glass{
+		min-height: 40vh;
+	}
+
+}
+
+@media (min-width:768px) and (max-width:991px){
+	.change{
+		background-color:rgba(251, 247, 8, 0.705)!important;
+	}
+	
+	.overlay{
+		padding-top: 1rem;
+	}
+}
+
+@media (min-width:300px) and (max-width:767px){
+	.home{
+		min-height: 80vh;
+		padding: 100px 50px;
+	}
+	.home_text_position h1{
+		font-size: 2rem!important;
+	}
+	.home_button{
+		margin-top: 0.5rem;
+		width: 250px;
+		height:40px;
+		border-radius:15px!important;
+		font-weight:800;
+		font-size:1.2rem;
+	}
+	.change{
+		background-color:rgba(0, 0, 0, 0.52)!important;
+	}
+
+	.services_card{
+		padding: 2rem;
+	}
+
+	.overlay{
+		padding-top: 8rem;
+	}
+
+	.about_biography{
+		margin-top:2rem;
+	}
+
+	.footer_social-media{
+		padding-top: 0!important;
+		padding-bottom: 0!important;
+		margin: 0;
+		height: 5rem;
+	}
+	
+	.footer .footer_social-media ul>li>a{
+		font-size: 1.5rem;
+		padding: 0.5rem;
+	}
+
+	.footer_text,.footer_text2{	
+		padding-top: 1rem!important;
+		padding-bottom: 1rem!important;
+		margin: 0;
+	}
+}
+
+@media (min-width:280px) and (max-width:480px){
+	.overlay{
+		padding-top: 4rem;	
+	}
+}
+
+/* Media Query Responsive Web section end */
