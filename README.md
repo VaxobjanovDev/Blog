@@ -1,2 +1,2 @@
-https://github-readme-stats.vercel.app/api?username=blog&count_private=true
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=blog&show_icons=true&theme=radical)
 
